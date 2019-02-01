@@ -1,0 +1,4 @@
+/home/admin1/work/src/github.com/user/gmail>Finished running tool: /usr/local/go/bin/go vet ./...
+
+/home/admin1/work/src/github.com/user/gmail>Finished running tool: /usr/local/go/bin/go build -i -o /tmp/vscode-goMvzxCv/go-code-check github.com/user/gmail
+

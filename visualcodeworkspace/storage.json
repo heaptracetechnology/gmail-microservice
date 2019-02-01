@@ -1,0 +1,33 @@
+{
+    "telemetry.machineId": "b4fffa01294d2bd36cf324af124b1adeb016c55de7fdb869c34297e1b00563d7",
+    "openedPathsList": {
+        "workspaces2": [
+            "file:///home/admin1/work/src/github.com/user/gmail",
+            "file:///home/admin1/work/src/github.com/user/minio"
+        ],
+        "files2": []
+    },
+    "theme": "vs",
+    "themeBackground": "#ffffff",
+    "pickerWorkingDir": "/home/admin1/work/src/github.com/user",
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/home/admin1/work/src/github.com/user/gmail",
+                "external": "file:///home/admin1/work/src/github.com/user/gmail",
+                "path": "/home/admin1/work/src/github.com/user/gmail",
+                "scheme": "file"
+            },
+            "backupPath": "/home/admin1/work/src/github.com/user/gmail/visualcodeworkspace/Backups/2bd3d3019e80b018708949bbd0ede96a",
+            "uiState": {
+                "mode": 0,
+                "x": 47,
+                "y": 24,
+                "width": 1319,
+                "height": 744
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+omg: 1
+lifecycle:
+  startup:
+    command: ["gmail"]
+info:
+  version: 1.0.0
+  title: Gmail 
+  description: This is a Gmail service
+  contact:
+    name: RohitS
+    url: https://github.com/ht68rohit
+    email: rohits@heptrace.com
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT 
+actions:
+  getprofile:
+    help: Get gmail profile with total messages, total threads
+    http:
+      port: 5000
+      method: post
+      path: /getprofile/{{userid}}
+      contentType: application/json
+    arguments:
+      userid:
+        type: string
+        in: path
+        required: true
+        help: email address as userid in path
+    output: 
+      contentType: application/json
+      type: object
+environment:
+  clientID:
+    type: string
+    required: true
+    help: client ID from gmail 
+  clientsecretID:
+    type: string
+    required: true
+    help: clientsecret ID from gmail 
+  token:
+    type: string
+    required: true
+    help: token from gmail
+    
+    
