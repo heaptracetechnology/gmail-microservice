@@ -30,6 +30,187 @@ actions:
     output: 
       contentType: application/json
       type: object
+  createdraft:
+    help: Draft/compose email
+    http:
+      port: 5000
+      method: post
+      path: /createdraft/{{userid}}
+      contentType: application/json
+    arguments:
+      userid:
+        type: string
+        in: path
+        required: true
+        help: Email address as userid in path
+      service:
+        type: string
+        in: requestBody
+        required: true
+        help: Gmail API service instance
+      email:
+        type: string
+        in: requestBody
+        required: true
+        help: Email body
+      receiverid:
+        type: string
+        in: requestBody
+        required: true
+        help: Receiver ID (ex:abc@gmail.com)
+    output: 
+      contentType: application/json
+      type: object
+  deletedraft:
+    help: Delete draft
+    http:
+      port: 5000
+      method: delete
+      path: /deletedraft/{{userid}}
+      contentType: application/json
+    arguments:
+      userid:
+        type: string
+        in: path
+        required: true
+        help: Email address as userid in path
+      service:
+        type: string
+        in: requestBody
+        required: true
+        help: Gmail API service instance
+      draftid:
+        type: string
+        in: requestBody
+        required: true
+        help: Id of the draft to delete
+      receiverid:
+        type: string
+        in: requestBody
+        required: true
+        help: Receiver ID (ex:abc@gmail.com)
+    output: 
+      contentType: application/json
+      type: object
+  getdraft:
+    help: Get draft
+    http:
+      port: 5000
+      method: get
+      path: /getdraft/{{userid}}
+      contentType: application/json
+    arguments:
+      userid:
+        type: string
+        in: path
+        required: true
+        help: Email address as userid in path
+      service:
+        type: string
+        in: requestBody
+        required: true
+        help: Gmail API service instance
+      draftid:
+        type: string
+        in: requestBody
+        required: true
+        help: Id of the draft to delete
+      receiverid:
+        type: string
+        in: requestBody
+        required: true
+        help: Receiver ID (ex:abc@gmail.com)
+    output: 
+      contentType: application/json
+      type: object
+  listdraft:
+    help: List all draft
+    http:
+      port: 5000
+      method: get
+      path: /listdraft/{{userid}}
+      contentType: application/json
+    arguments:
+      userid:
+        type: string
+        in: path
+        required: true
+        help: Email address as userid in path
+      service:
+        type: string
+        in: requestBody
+        required: true
+        help: Gmail API service instance
+    output: 
+      contentType: application/json
+      type: object
+  senddraft:
+    help: Send draft
+    http:
+      port: 5000
+      method: post
+      path: /senddraft/{{userid}}
+      contentType: application/json
+    arguments:
+      userid:
+        type: string
+        in: path
+        required: true
+        help: Email address as userid in path
+      service:
+        type: string
+        in: requestBody
+        required: true
+        help: Gmail API service instance
+      draftid:
+        type: string
+        in: requestBody
+        required: true
+        help: Id of the draft to delete
+      receiverid:
+        type: string
+        in: requestBody
+        required: true
+        help: Receiver ID (ex:abc@gmail.com)
+    output: 
+      contentType: application/json
+      type: object
+  updatedraft:
+    help: Update draft
+    http:
+      port: 5000
+      method: put
+      path: /updatedraft/{{userid}}
+      contentType: application/json
+    arguments:
+      userid:
+        type: string
+        in: path
+        required: true
+        help: Email address as userid in path
+      service:
+        type: string
+        in: requestBody
+        required: true
+        help: Gmail API service instance
+      draftid:
+        type: string
+        in: requestBody
+        required: true
+        help: Id of the draft to delete
+      updatedEmail:
+        type: string
+        in: requestBody
+        required: true
+        help: updated email body
+      send:
+        type: boolean
+        in: requestBody
+        required: true
+        help: Send email if true, do not send otherwise
+    output: 
+      contentType: application/json
+      type: object
 environment:
   clientID:
     type: string
