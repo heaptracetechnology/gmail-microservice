@@ -1,7 +1,0 @@
-[2019-01-31 19:16:06.959] [renderer1] [info] no standard startup: not just one text editor
-[2019-01-31 20:01:22.178] [renderer1] [info] no standard startup: not the explorer viewlet
-[2019-01-31 20:01:41.233] [renderer1] [info] no standard startup: not just one text editor
-[2019-01-31 20:12:53.300] [renderer1] [warning] Aborted format on save after 750ms
-[2019-01-31 20:55:40.661] [renderer1] [warning] UNRESPONSIVE extension host, 'vscode.git' took 91% of 9267.916ms, saved PROFILE here: '/tmp/exthost-b5f8d5.cpuprofile' [{"id":"ms-vscode.Go","total":101,"percentage":0},{"id":"program","total":703511,"percentage":8},{"id":"self","total":122460,"percentage":1},{"id":"vscode.git","total":8435783,"percentage":91}]
-[2019-01-31 20:56:15.904] [renderer1] [info] no standard startup: not the explorer viewlet
-[2019-01-31 20:56:29.299] [renderer1] [info] no standard startup: not a new window
